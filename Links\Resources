@@ -1,8 +1,13 @@
 PHP Official Documentation:
 https://www.php.net/docs.php
 
-MacOS install:
-https://www.php.net/manual/en/install.macosx.php
+MacOS Install:
+Open Terminal (launchpad -> type in terminal):
+Install Brew:
+https://brew.sh/
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew install php
+
 Linux Install:
 https://www.php.net/manual/en/install.unix.php
 
