@@ -6,7 +6,10 @@ Open Terminal (launchpad -> type in terminal):
 Install Brew:
 https://brew.sh/
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew install curl
 brew install php
+To Troubleshoot brew:
+brew doctor
 
 Linux Install:
 https://www.php.net/manual/en/install.unix.php
