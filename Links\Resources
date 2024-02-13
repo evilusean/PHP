@@ -22,6 +22,9 @@ cmd #open command
 echo %PATH% #will print out all path variables on windows
 php -v #checks version of PHP
 
+# starts a php webserver in terminal
+php -S localhost:4000 
+
 PHP Certificate:
 https://www.w3schools.com/php/php_exam.asp
 Coursera PHP:
