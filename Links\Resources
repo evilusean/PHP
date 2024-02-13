@@ -22,8 +22,26 @@ cmd #open command
 echo %PATH% #will print out all path variables on windows
 php -v #checks version of PHP
 
-# starts a php webserver in terminal
+Apache Webserver install:
+sudo apt-get install apache2
+sudo apt-get install libapache2-mod-php
+
+How to Install LAMP Stack(Linux Appache MySQL PHP):
+https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-20-04
+
+Install PHP-XDebug:
+sudo apt-get install php-xdebug
+How to turn on PHP-xdebug:
+https://xdebug.org/docs/install
+
+# starts a php webserver in terminal 
 php -S localhost:4000 
+
+Get IP address:
+If you enter the command “ifconfig” in the terminal, all information will be displayed. You can also use the commands “ip addr” or “ip a”
+Grep 1 liner for IP address:
+ip addr show eth0 | grep inet | awk '{ print $2; }' | sed 's/\/.*$//'
+
 
 PHP Certificate:
 https://www.w3schools.com/php/php_exam.asp
