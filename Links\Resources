@@ -13,6 +13,7 @@ brew doctor
 
 Linux Install:
 https://www.php.net/manual/en/install.unix.php
+sudo apt install php
 
 PHP Certificate:
 https://www.w3schools.com/php/php_exam.asp
