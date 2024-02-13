@@ -42,6 +42,7 @@ If you enter the command “ifconfig” in the terminal, all information will be
 Grep 1 liner for IP address:
 ip addr show eth0 | grep inet | awk '{ print $2; }' | sed 's/\/.*$//'
 
+You can create a file in '/var/wwww/html' directory on linux and run it from there using 'http://localhost/test.php' in the browser 
 
 PHP Certificate:
 https://www.w3schools.com/php/php_exam.asp
