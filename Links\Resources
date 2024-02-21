@@ -47,6 +47,15 @@ ip addr show eth0 | grep inet | awk '{ print $2; }' | sed 's/\/.*$//'
 
 You can create a file in '/var/wwww/html' directory on linux and run it from there using 'http://localhost/test.php' in the browser 
 
+PHP-Laravel Installer:
+https://laravel.com/docs/5.0/installation
+  1) Install Composer:
+  https://getcomposer.org/
+  https://getcomposer.org/doc/faqs/how-to-install-composer-programmatically.md
+  2)Install Laravel:
+  composer global require "laravel/installer=~1.1"
+  
+
 PHP Certificate:
 https://www.w3schools.com/php/php_exam.asp
 Coursera PHP:
