@@ -55,6 +55,14 @@ https://laravel.com/docs/5.0/installation
   2)Install Laravel:
   composer global require "laravel/installer=~1.1"
 
+Install Node/NPM:
+curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+sudo apt-get install -y nodejs
+sudo apt install Node.js 
+sudo apt install npm
+sudo apt-get update
+sudo apt-get upgrade
+
 Use Laravel:
 laravel new blog #would create a directory named blog containing a fresh Laravel installation with all dependencies installed. This method of installation is much faster than installing via Composer
 composer create-project laravel/laravel {directory} "5.0.*" --prefer-dist #way to user composer to start a laravel project
