@@ -54,7 +54,10 @@ https://laravel.com/docs/5.0/installation
   https://getcomposer.org/doc/faqs/how-to-install-composer-programmatically.md
   2)Install Laravel:
   composer global require "laravel/installer=~1.1"
-  
+
+Use Laravel:
+laravel new blog #would create a directory named blog containing a fresh Laravel installation with all dependencies installed. This method of installation is much faster than installing via Composer
+composer create-project laravel/laravel {directory} "5.0.*" --prefer-dist #way to user composer to start a laravel project
 
 PHP Certificate:
 https://www.w3schools.com/php/php_exam.asp
