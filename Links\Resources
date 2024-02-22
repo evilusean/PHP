@@ -73,6 +73,13 @@ sudo composer create-project laravel/laravel laravelapp
 Laravel Fix:
 https://stackoverflow.com/questions/61395786/i-get-laravel-command-not-found-on-ubuntu-20-04
 
+How to Start a project:
+https://laravel.com/docs/10.x/installation
+composer global require laravel/installer
+laravel new example-app
+cd example-app
+php artisan serve #Once you have started the Artisan development server, your application will be accessible in your web browser at http://localhost:8000
+
 PHP Certificate:
 https://www.w3schools.com/php/php_exam.asp
 Coursera PHP:
