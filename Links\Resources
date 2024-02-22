@@ -46,6 +46,7 @@ Grep 1 liner for IP address:
 ip addr show eth0 | grep inet | awk '{ print $2; }' | sed 's/\/.*$//'
 
 You can create a file in '/var/wwww/html' directory on linux and run it from there using 'http://localhost/test.php' in the browser 
+cd /var/www/html
 
 PHP-Laravel Installer:
 https://laravel.com/docs/5.0/installation
@@ -66,6 +67,10 @@ sudo apt-get upgrade
 Use Laravel:
 laravel new blog #would create a directory named blog containing a fresh Laravel installation with all dependencies installed. This method of installation is much faster than installing via Composer
 composer create-project laravel/laravel {directory} "5.0.*" --prefer-dist #way to user composer to start a laravel project
+
+https://operavps.com/docs/install-laravel-on-ubuntu/
+sudo composer create-project laravel/laravel laravelapp
+
 
 PHP Certificate:
 https://www.w3schools.com/php/php_exam.asp
