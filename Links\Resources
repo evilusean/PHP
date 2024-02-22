@@ -70,7 +70,8 @@ composer create-project laravel/laravel {directory} "5.0.*" --prefer-dist #way t
 
 https://operavps.com/docs/install-laravel-on-ubuntu/
 sudo composer create-project laravel/laravel laravelapp
-
+Laravel Fix:
+https://stackoverflow.com/questions/61395786/i-get-laravel-command-not-found-on-ubuntu-20-04
 
 PHP Certificate:
 https://www.w3schools.com/php/php_exam.asp
