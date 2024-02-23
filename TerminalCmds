@@ -1,7 +1,28 @@
 # starts a php webserver in terminal:
 php -S localhost:4000
+php artisan serve --host=0.0.0.0 --port=8000 #starts a server without having to change any firewall settings
+npm run dev #starts a server for localhost using npm
 
-
+=====================================================================================ERROR FIX================================================================================================================
+https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-22-04
+  #got an error when compiling, ran below to fix
+  curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+  sudo apt-get install -y nodejs
+  #had to install another program, nvm node version manager
+  sudo apt install curl
+  curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash 
+  #check versions of node to install, install through nvm allows you to get a newer version on ubuntu, automatically installs 12.22 for some reason instead of latest
+  #ERROR MESSAGE : ERROR: npm v10.2.4 is known not to run on Node.js v12.22.9.  This version of npm supports the following node versions: `^18.17.0 || >=20.5.0`.
+nvm list-remote #lists all available versions NVM can install, need above 14 to run 'npm run dev'
+nvm install v20.11.1 #installed version
+nvm list #This shows the currently active version on the first line
+Further TroubleShooting======================================================================================================================================================================================
+sudo apt remove nodejs #You can uninstall Node.js using apt or nvm, depending on how it was installed. To remove the version from the system repositories, use apt remove
+sudo apt purge nodejs #By default, apt remove retains any local configuration files that were created since install. If you don’t want to save the configuration files for later use, use apt purge
+nvm current #To uninstall a version of Node.js that you installed using nvm, first determine whether it is the current active version:
+nvm uninstall node_version #how to uninstall with nvm, replace node_version with what you want to remove
+nvm deactivate # If the version you would like to remove is the current active version, you’ll first need to deactivate nvm to enable your changes:
+FIXED: 'npm run dev' WORKS ===================================================================================================================================================================================
 
 
 
