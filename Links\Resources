@@ -4,6 +4,40 @@ https://www.php.net/docs.php
 PHP - Laravel Official Documentation:
 https://laravel.com/docs/10.x/readme
 
+
+
+PHP Certificate:
+https://www.w3schools.com/php/php_exam.asp
+Coursera PHP:
+https://www.coursera.org/specializations/web-applications
+https://www.coursera.org/learn/web-applications-php
+https://www.coursera.org/learn/database-applications-php
+PHP Laravel Sail: Docker vs Valet(Mac local machine): 
+https://www.youtube.com/watch?v=xmvD_EjNE-4&ab_channel=AaronFrancis
+PHP in 5 hours:
+https://www.youtube.com/watch?v=OK_JCtrrv-c&ab_channel=freeCodeCamp.org
+PHP-Laravel-Instagram Clone :
+https://www.youtube.com/watch?v=ImtZ5yENzgE&ab_channel=freeCodeCamp.org
+https://github.com/coderstape/freecodegram
+Laravel in 4 hours:
+https://www.youtube.com/watch?v=MYyJ4PuL4pY&ab_channel=TraversyMedia
+Laravel Playlist(Traversy):
+https://www.youtube.com/watch?v=EU7PRmCpx-0&list=PLillGF-RfqbYhQsN5WMXy6VsDMKGadrJ-&ab_channel=TraversyMedia
+Laravel PHP+ Vue JS Google Drive Clone, fully working:
+https://www.youtube.com/watch?v=Wn3IPX_ax-0&ab_channel=freeCodeCamp.org
+
+LainChan(image messageboard-PHP):
+https://github.com/lainchan/lainchan
+
+Heroku  + PHP + PostGreSQL = Free hosting
+  Ideas = E-commerce site/forum site/news aggregation site/most disliked site(+extension)/end 2 end encryption site/
+
+FCC - Learn Laravel by Building a Medium Clone – Tutorial (2025 - 7hours) : 
+https://www.youtube.com/watch?v=MG1kt_wiIz0
+
+FCC - Build a Google Calendar Clone with PHP, MySql & JavaScript (2025 - 3hours) :
+https://www.freecodecamp.org/news/build-a-google-calendar-clone-with-php-mysql-and-javascript/
+
 MacOS Install:
 Open Terminal (launchpad -> type in terminal):
 Install Brew:
@@ -81,38 +115,6 @@ cd example-app
 php artisan serve #Once you have started the Artisan development server, your application will be accessible in your web browser at http://localhost:8000
 
 php artisan #lists all commands you can use in artisan, 'available commands' are unique to artisan, other commands are universal
-
-PHP Certificate:
-https://www.w3schools.com/php/php_exam.asp
-Coursera PHP:
-https://www.coursera.org/specializations/web-applications
-https://www.coursera.org/learn/web-applications-php
-https://www.coursera.org/learn/database-applications-php
-PHP Laravel Sail: Docker vs Valet(Mac local machine): 
-https://www.youtube.com/watch?v=xmvD_EjNE-4&ab_channel=AaronFrancis
-PHP in 5 hours:
-https://www.youtube.com/watch?v=OK_JCtrrv-c&ab_channel=freeCodeCamp.org
-PHP-Laravel-Instagram Clone :
-https://www.youtube.com/watch?v=ImtZ5yENzgE&ab_channel=freeCodeCamp.org
-https://github.com/coderstape/freecodegram
-Laravel in 4 hours:
-https://www.youtube.com/watch?v=MYyJ4PuL4pY&ab_channel=TraversyMedia
-Laravel Playlist(Traversy):
-https://www.youtube.com/watch?v=EU7PRmCpx-0&list=PLillGF-RfqbYhQsN5WMXy6VsDMKGadrJ-&ab_channel=TraversyMedia
-Laravel PHP+ Vue JS Google Drive Clone, fully working:
-https://www.youtube.com/watch?v=Wn3IPX_ax-0&ab_channel=freeCodeCamp.org
-
-LainChan(image messageboard-PHP):
-https://github.com/lainchan/lainchan
-
-Heroku  + PHP + PostGreSQL = Free hosting
-  Ideas = E-commerce site/forum site/news aggregation site/most disliked site(+extension)/end 2 end encryption site/
-
-FCC - Learn Laravel by Building a Medium Clone – Tutorial (2025 - 7hours) : 
-https://www.youtube.com/watch?v=MG1kt_wiIz0
-
-FCC - Build a Google Calendar Clone with PHP, MySql & JavaScript (2025 - 3hours) :
-https://www.freecodecamp.org/news/build-a-google-calendar-clone-with-php-mysql-and-javascript/
 
 Laravel Homestead:
 A pre-packaged Vagrant box providing a complete development environment with PHP, Nginx, databases, and other services within a virtual machine.
