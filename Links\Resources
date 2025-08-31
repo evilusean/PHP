@@ -2,7 +2,10 @@ PHP Official Documentation:
 https://www.php.net/docs.php
 
 PHP - Laravel Official Documentation:
-https://laravel.com/docs/10.x/readme
+https://laravel.com/docs/11.x
+Authentication (add with 2 commands : 'composer require laravel/breeze' 'php artisan breeze:install' ) :
+https://laravel.com/docs/11.x/authentication
+https://laravel.com/docs/11.x/starter-kits
 
 JetBrains - PHP Storm (Future Sean, paid app) :
 https://www.jetbrains.com/phpstorm/
