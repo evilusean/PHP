@@ -174,3 +174,7 @@ Start the virtual machine:
 vagrant up # The first time you run this, Vagrant will download the pre-packaged Laravel Homestead box, which may take some time.
 Access the VM: Once it's up, you can SSH into the virtual machine.
 vagrant ssh
+
+Add Auth/Login/Registation/Password Recovery to your PHP Laravel project with 2 commands :
+'composer require laravel/breeze' # will require and install breeze package, which has everything you need for authentication : registration, login, email verification, password resets, etc
+'php artisan breeze:install' # installs breeze into your project update composer.json, package.lock, add tonnes of files(scaffolding) for login, auth, etc, 
