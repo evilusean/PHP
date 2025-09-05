@@ -1,0 +1,92 @@
+'::' (Static Call)
+This is PHP's scope resolution operator. In Laravel, it's most often used to call a static method on a Facade, which is a "shortcut" to a service.
+Route::get('/about', 'MyController@about');
+// Access a class method without instantiating it.
+MyClass::myStaticMethod();
+
+'->' (Object Operator)
+This is PHP's object operator, used for method chaining on an object instance. This is a core part of Eloquent and the Query Builder.
+// The `Post` model returns a query builder instance, which `->get()` is called on.
+$posts = Post::where('published', true)->get();
+// Call a method on a class instance.
+$user = new User();
+$user->save();
+
+'?->' (Nullsafe Operator)
+This operator, available in PHP 8 and newer, allows you to call a method or access a property on an object that might be null. It's a clean way to prevent errors.
+// If $user->profile is null, the expression returns null instead of throwing an error.
+$email = $user->profile?->email;
+
+Blade Templating Syntax
+This is the syntax for Laravel's templating engine, used in .blade.php files.
+'{{ }}' (Echo with HTML Escape)
+This syntax is used to display the contents of a variable. It is secure because it automatically escapes HTML to prevent XSS attacks.
+<h1>Hello, {{ $name }}</h1>
+
+{!! !!} (Echo Raw, Unescaped HTML)
+This syntax displays raw, unescaped HTML from a variable. Use this with caution, as it is a potential security risk if the content comes from a user.
+<div>{!! $post->content !!}</div>
+
+{{-- --}} (Blade Comment)
+This is the Blade comment syntax. All text inside it is completely removed from the final HTML that is sent to the browser.
+{{-- This comment is for developers only --}}
+
+Blade Control Structures (@)
+Blade uses the @ symbol for its control structures, which are similar to native PHP but more readable.
+
+If Statements
+@if ($user->isLoggedIn())
+    <p>Welcome back!</p>
+@elseif ($user->isGuest())
+    <p>Please log in.</p>
+@else
+    <p>Something went wrong.</p>
+@endif
+
+Foreach Loop
+@foreach ($posts as $post)
+    <p>{{ $post->title }}</p>
+@endforeach
+@forelse ($users as $user)
+    <li>{{ $user->name }}</li>
+@empty
+    <p>No users found.</p>
+@endforelse
+
+Includes
+Includes a partial view file. This is useful for reusing components like headers and footers.
+@include('components.header')
+
+Layouts (@extends, @section, @yield)
+These directives are used for templating, allowing you to define a master layout and insert content into it.
+{{-- In master.blade.php --}}
+@yield('content')
+
+{{-- In mypage.blade.php --}}
+@extends('layouts.master')
+@section('content')
+    <p>This content will be placed in the master layout.</p>
+@endsection
+
+Database & Eloquent Syntax
+These patterns are used to interact with your database using Laravel's Eloquent ORM.
+Models & Relationships
+// One-to-one relationship
+public function profile() {
+    return $this->hasOne(Profile::class);
+}
+
+// One-to-many relationship
+public function comments() {
+    return $this->hasMany(Comment::class);
+}
+
+Query Builder
+// Simple where clause
+Post::where('title', 'My First Post')->get();
+
+// Complex where clause
+Post::where('published', true)
+    ->where('views', '>', 100)
+    ->orderBy('created_at', 'desc')
+    ->paginate(10);
