@@ -3,7 +3,6 @@ php -S localhost:4000
 php artisan serve --host=0.0.0.0 --port=8000 #starts a server without having to change any firewall settings
 npm run dev #starts a server for localhost using npm
 composer run dev # starts a server using composer
-'php artisan tinker' is a command-line utility that provides a powerful REPL (Read-Eval-Print Loop) for interacting with your Laravel application and its Eloquent models from the terminal.
 
 # Server & Environment :
 php artisan serve = Starts a local development server at http://localhost:8000. This is the easiest way to run and test your application without configuring a separate web server.
@@ -35,29 +34,20 @@ php artisan make:seeder <SeederName> = Creates a new seeder class to populate th
 php artisan make:factory <FactoryName> = Creates a new model factory for generating fake data.
 php artisan make:middleware <MiddlewareName> = Creates a new middleware class to filter HTTP requests.
 
-=====================================================================================ERROR FIX================================================================================================================
-https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-22-04
-  #got an error when compiling, ran below to fix
-  curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
-  sudo apt-get install -y nodejs
-  #had to install another program, nvm node version manager
-  sudo apt install curl
-  curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash 
-  #check versions of node to install, install through nvm allows you to get a newer version on ubuntu, automatically installs 12.22 for some reason instead of latest
-  #ERROR MESSAGE : ERROR: npm v10.2.4 is known not to run on Node.js v12.22.9.  This version of npm supports the following node versions: `^18.17.0 || >=20.5.0`.
-nvm list-remote #lists all available versions NVM can install, need above 14 to run 'npm run dev'
-nvm install v20.11.1 #installed version
-nvm list #This shows the currently active version on the first line
-Further TroubleShooting======================================================================================================================================================================================
-sudo apt remove nodejs #You can uninstall Node.js using apt or nvm, depending on how it was installed. To remove the version from the system repositories, use apt remove
-sudo apt purge nodejs #By default, apt remove retains any local configuration files that were created since install. If you don’t want to save the configuration files for later use, use apt purge
-nvm current #To uninstall a version of Node.js that you installed using nvm, first determine whether it is the current active version:
-nvm uninstall node_version #how to uninstall with nvm, replace node_version with what you want to remove
-nvm deactivate # If the version you would like to remove is the current active version, you’ll first need to deactivate nvm to enable your changes:
-FIXED: 'npm run dev' WORKS ===================================================================================================================================================================================
-
-
-
+===============================================================================================================================================================================================
+'php artisan tinker' is a command-line utility that provides a powerful REPL (Read-Eval-Print Loop) for interacting with your Laravel application and its Eloquent models from the terminal.
+App\Models\Post::all(); = Retrieves all records from the posts table as an Eloquent Collection.
+App\Models\Post::find(1); = Finds and returns a single post by its primary key (ID).
+App\Models\Post::where('user_id', 1)->get(); = Retrieves all posts that match a specific condition.
+$post = new App\Models\Post; = Creates a new instance of the Post model.
+$post->title = 'My New Post'; = Assigns a value to a model's attribute.
+$post->save(); = Saves the new or updated model instance to the database.
+$post = App\Models\Post::find(1); = Finds a post.
+$post->delete(); = Deletes the model instance from the database.
+factory(App\Models\Post::class)->create(); = Uses the model factory to create and save a new post with fake data.
+App\Models\Post::firstOrCreate(['title' => 'My Title']); = Finds a post by the given attributes or creates it if it doesn't exist.
+App\Models\Post::firstWhere('slug', 'my-post-slug'); = Finds the first model that matches a specific condition.
+exit or quit = Exits the Tinker session.
 
 
 
