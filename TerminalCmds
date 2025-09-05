@@ -2,6 +2,38 @@
 php -S localhost:4000
 php artisan serve --host=0.0.0.0 --port=8000 #starts a server without having to change any firewall settings
 npm run dev #starts a server for localhost using npm
+composer run dev # starts a server using composer
+'php artisan tinker' is a command-line utility that provides a powerful REPL (Read-Eval-Print Loop) for interacting with your Laravel application and its Eloquent models from the terminal.
+
+# Server & Environment :
+php artisan serve = Starts a local development server at http://localhost:8000. This is the easiest way to run and test your application without configuring a separate web server.
+php artisan down = Puts the application into maintenance mode, displaying a temporary "Be right back" page to all visitors.
+php artisan up = Brings the application out of maintenance mode.
+php artisan storage:link = Creates a symbolic link from public/storage to storage/app/public, which is necessary for serving publicly accessible files (like user uploads).
+
+# Database & Migrations
+php artisan migrate = Runs all pending migrations to update your database schema.
+php artisan migrate:rollback = Rolls back the last batch of migrations. This is useful for undoing a mistake.
+php artisan migrate:status = Shows a list of all migrations and whether they have been run.
+php artisan db:seed = Runs all database seeders to populate your database with initial data.
+php artisan migrate:fresh = Drops all tables from the database and then re-runs all migrations. This is a quick way to reset your database.
+php artisan tinker = Opens a powerful command-line interface for interacting with your application, models, and database.
+
+# Caches & Optimization :
+php artisan route:cache = Creates a cache file for your routes, significantly speeding up route registration for production environments.
+php artisan route:clear = Clears the route cache file. You'll need to run this when adding new routes.
+php artisan config:cache = Creates a cache file for your configuration, speeding up the application.
+php artisan config:clear = Clears the configuration cache.
+php artisan view:cache = Compiles all Blade views for faster rendering in production.
+php artisan view:clear = Clears the compiled view cache.
+
+# Code Generation (Make Commands) :
+php artisan make:model <ModelName> = Creates a new Eloquent model file.
+php artisan make:controller <ControllerName> = Creates a new controller file to handle web requests.
+php artisan make:migration <MigrationName> = Creates a new migration file for database schema changes.
+php artisan make:seeder <SeederName> = Creates a new seeder class to populate the database.
+php artisan make:factory <FactoryName> = Creates a new model factory for generating fake data.
+php artisan make:middleware <MiddlewareName> = Creates a new middleware class to filter HTTP requests.
 
 =====================================================================================ERROR FIX================================================================================================================
 https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-22-04
