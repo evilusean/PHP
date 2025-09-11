@@ -191,6 +191,8 @@ Render :
 Render is an excellent choice as it has very clear, separate free tiers for both web services and PostgreSQL.
   Free Web Service - The free tier for your Laravel app gives you 750 hours of uptime per month. 
   The main limitation is that your service will spin down after 15 minutes of inactivity, leading to a slight delay for the first visitor (known as a "cold start").
+  The cold start delay for a free Render web service is typically around 30 seconds. This happens because Render spins down your application after 15 minutes of inactivity to save resources. 
+  When the next visitor accesses your site, it has to "wake up" the server, which causes the initial delay. After that, the site will be fast for subsequent requests until it goes idle again.
 Free PostgreSQL Database: You get a PostgreSQL database with 100MB of storage. This is more than enough for a portfolio project and works seamlessly with your Laravel app.
 Railway :
 Railway is another solid option with a generous free tier. It operates on a usage-based model with a monthly credit of $5.
