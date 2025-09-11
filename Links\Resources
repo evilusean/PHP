@@ -185,3 +185,17 @@ vagrant ssh
 Add Auth/Login/Registation/Password Recovery to your PHP Laravel project with 2 commands :
 'composer require laravel/breeze' # will require and install breeze package, which has everything you need for authentication : registration, login, email verification, password resets, etc
 'php artisan breeze:install' # installs breeze into your project update composer.json, package.lock, add tonnes of files(scaffolding) for login, auth, etc, 
+
+Free Hosting For Resume Options :
+Render :
+Render is an excellent choice as it has very clear, separate free tiers for both web services and PostgreSQL.
+  Free Web Service - The free tier for your Laravel app gives you 750 hours of uptime per month. 
+  The main limitation is that your service will spin down after 15 minutes of inactivity, leading to a slight delay for the first visitor (known as a "cold start").
+Free PostgreSQL Database: You get a PostgreSQL database with 100MB of storage. This is more than enough for a portfolio project and works seamlessly with your Laravel app.
+Railway :
+Railway is another solid option with a generous free tier. It operates on a usage-based model with a monthly credit of $5.
+  Free Usage: This credit can be applied to both your web application and your PostgreSQL database, so you can run both for free as long as your usage stays within the monthly limit. 
+  This is usually sufficient for a portfolio project.
+Major Cloud Providers:
+Platforms like Amazon Web Services (AWS), Google Cloud Platform (GCP), and Microsoft Azure also offer extensive free tiers. 
+  However, they are generally more complex to set up and manage than PaaS platforms like Render or Railway, and their free tiers often have a one-year limit.
