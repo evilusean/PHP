@@ -201,3 +201,18 @@ Railway is another solid option with a generous free tier. It operates on a usag
 Major Cloud Providers:
 Platforms like Amazon Web Services (AWS), Google Cloud Platform (GCP), and Microsoft Azure also offer extensive free tiers. 
   However, they are generally more complex to set up and manage than PaaS platforms like Render or Railway, and their free tiers often have a one-year limit.
+AWS : 
+The AWS Free Tier offers several services with usage limits that can be used to host a full-stack Laravel project, but it is typically only free for the first 12 months.
+Key Free Services - The free tier includes services for both your backend and frontend.
+For the Backend:
+Amazon EC2: You get 750 hours per month of a t2.micro or t3.micro instance. This is enough to run your Laravel application 24/7 for a month.
+Amazon RDS: You get 750 hours per month of a single db.t2.micro database instance, which can host your PostgreSQL database. This is also enough to run your database continuously.
+For the Frontend:
+Amazon S3: You receive 5 GB of standard storage. This is perfect for hosting your frontend as static files (like a React or Vue SPA).
+Amazon CloudFront: A content delivery network (CDN) that you can use to serve your frontend and static assets faster globally, with a free tier of 50 GB of data transfer.
+Hosting a Full-Stack Project :
+Yes, the AWS Free Tier can host both a Laravel backend and a frontend. The Laravel backend would run on an EC2 instance, while the PostgreSQL database would run on an RDS instance. 
+If your frontend is a separate JavaScript application, you can host it as static files in an S3 bucket and serve it with CloudFront.
+The main challenge is that setting up all these services and connecting them requires significant technical knowledge and is much more complex than using a simpler Platform as a Service (PaaS) 
+  like Render or Railway. 💻
+
