@@ -219,3 +219,12 @@ If your frontend is a separate JavaScript application, you can host it as static
 The main challenge is that setting up all these services and connecting them requires significant technical knowledge and is much more complex than using a simpler Platform as a Service (PaaS) 
   like Render or Railway. 💻
 
+=================================================================================================================================================================================================
+PHP Laravel Packages :
+Spatie (has many packages for laravel to enhance usability) :
+https://spatie.be/
+  laravel-permission: This package offers a simple, powerful way to manage user roles and permissions in your application. 
+  laravel-medialibrary: It's a package that easily associates files, such as images, videos, and documents, with Eloquent models.
+  laravel-backup: This package provides a zero-config way to back up your application's files and databases.
+  laravel-seo: A package for effortlessly adding SEO tags and structured data to your pages.
+
