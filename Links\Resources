@@ -227,4 +227,5 @@ https://spatie.be/
   laravel-medialibrary: It's a package that easily associates files, such as images, videos, and documents, with Eloquent models.
   laravel-backup: This package provides a zero-config way to back up your application's files and databases.
   laravel-seo: A package for effortlessly adding SEO tags and structured data to your pages.
-
+https://spatie.be/docs/laravel-medialibrary/v11/introduction
+https://github.com/spatie/laravel-medialibrary
