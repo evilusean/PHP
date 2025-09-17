@@ -218,6 +218,12 @@ Yes, the AWS Free Tier can host both a Laravel backend and a frontend. The Larav
 If your frontend is a separate JavaScript application, you can host it as static files in an S3 bucket and serve it with CloudFront.
 The main challenge is that setting up all these services and connecting them requires significant technical knowledge and is much more complex than using a simpler Platform as a Service (PaaS) 
   like Render or Railway. 💻
+PHP + MySQL :
+InfinityFree: A popular and reliable choice that provides 5 GB of disk space, unlimited bandwidth, and multiple MySQL databases with no forced ads.
+ProFreeHost: Similar to InfinityFree, this service offers 5 GB of disk space, unlimited bandwidth, and MySQL, all with a promise of no forced ads on your website.
+AwardSpace: This service offers a free plan with 1 GB of disk space, 5 GB of bandwidth, and one MySQL database, making it a good starting point for small projects.
+000webhost: Powered by Hostinger, 000webhost provides a free plan with a single database, limited disk space, and no forced ads, making it a decent option for learning and development.
+Freehostia: With their "Chocolate" free plan, you get 250 MB of disk space, 6 GB of monthly traffic, and one MySQL database, which is suitable for a very small and simple website.
 
 =================================================================================================================================================================================================
 PHP Laravel Packages :
