@@ -224,6 +224,13 @@ ProFreeHost: Similar to InfinityFree, this service offers 5 GB of disk space, un
 AwardSpace: This service offers a free plan with 1 GB of disk space, 5 GB of bandwidth, and one MySQL database, making it a good starting point for small projects.
 000webhost: Powered by Hostinger, 000webhost provides a free plan with a single database, limited disk space, and no forced ads, making it a decent option for learning and development.
 Freehostia: With their "Chocolate" free plan, you get 250 MB of disk space, 6 GB of monthly traffic, and one MySQL database, which is suitable for a very small and simple website.
+PHP + PostgreSQL :
+Aiven: This service provides a free, fully managed PostgreSQL database instance with 1 GB of storage and 1 GB of RAM, perfect for prototyping and learning.
+HelioHost: A non-profit organization that offers full-featured free web hosting, including dedicated support for both PHP and PostgreSQL databases.
+ElephantSQL: This provider focuses solely on managed PostgreSQL hosting and offers a "Tiny Turtle" free plan that provides a small database with a 20 MB storage limit for simple projects.
+Neon: A serverless PostgreSQL platform that offers a free tier with 3 GiB of data storage and a generous monthly compute allowance, making it a good option for small-scale projects.
+Supabase: This is a Firebase alternative that includes a free-tier PostgreSQL database with built-in APIs and user authentication, which could simplify your imageboard development.
+Kamatera: They offer a 30-day free trial with a significant amount of credit, allowing you to run a high-performance VPS with a full PHP and PostgreSQL stack for a short-term project.
 
 =================================================================================================================================================================================================
 PHP Laravel Packages :
