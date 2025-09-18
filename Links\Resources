@@ -231,6 +231,14 @@ ElephantSQL: This provider focuses solely on managed PostgreSQL hosting and offe
 Neon: A serverless PostgreSQL platform that offers a free tier with 3 GiB of data storage and a generous monthly compute allowance, making it a good option for small-scale projects.
 Supabase: This is a Firebase alternative that includes a free-tier PostgreSQL database with built-in APIs and user authentication, which could simplify your imageboard development.
 Kamatera: They offer a 30-day free trial with a significant amount of credit, allowing you to run a high-performance VPS with a full PHP and PostgreSQL stack for a short-term project.
+Free Backend Storage : 
+Google Cloud Storage / Firebase Storage: Google Cloud offers a robust object storage solution that is highly scalable and reliable. 
+  It integrates seamlessly with a backend built on Google Cloud or Firebase. Firebase Storage, in particular, is an excellent choice for a new developer because it's 
+  specifically designed to work with web and mobile apps and offers a generous free tier.
+AWS S3: Amazon S3 is a highly popular and powerful object storage service. It's used by countless companies and has a very flexible free tier with 5 GB of storage, 
+  20,000 GET requests, and 2,000 PUT requests per month. It's a great choice if you plan to scale your application significantly in the future.
+Cloudinary: Cloudinary is more than just a storage service; it's an end-to-end media management platform. It offers a free tier that includes 25 GB of storage, 25,000 transformations,
+  and 25,000 monthly views. It's an excellent choice because it handles image optimization, resizing, and transformations automatically, which can save you a lot of time and effort.
 
 =================================================================================================================================================================================================
 PHP Laravel Packages :
