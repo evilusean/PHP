@@ -239,7 +239,11 @@ AWS S3: Amazon S3 is a highly popular and powerful object storage service. It's 
   20,000 GET requests, and 2,000 PUT requests per month. It's a great choice if you plan to scale your application significantly in the future.
 Cloudinary: Cloudinary is more than just a storage service; it's an end-to-end media management platform. It offers a free tier that includes 25 GB of storage, 25,000 transformations,
   and 25,000 monthly views. It's an excellent choice because it handles image optimization, resizing, and transformations automatically, which can save you a lot of time and effort.
-
+TeraBox, which offers a very generous 1 TB (terabyte) of free storage space.
+MEGA: Offers 20 GB of free storage.
+Google Drive/Google Photos: Offers 15 GB of storage, which is shared across all Google services.
+pCloud: Offers 10 GB of free storage.
+Icedrive: Offers 10 GB of free storage.
 =================================================================================================================================================================================================
 PHP Laravel Packages :
 Spatie (has many packages for laravel to enhance usability) :
